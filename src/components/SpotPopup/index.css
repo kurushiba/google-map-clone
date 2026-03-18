@@ -1,0 +1,112 @@
+.spot-popup {
+  min-width: 200px;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.spot-popup-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.spot-popup-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #202124;
+}
+
+.spot-popup-category {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.spot-popup-category--cafe       { background: #fce8e6; color: #c5221f; }
+.spot-popup-category--restaurant { background: #fef7e0; color: #b06000; }
+.spot-popup-category--park       { background: #e6f4ea; color: #137333; }
+.spot-popup-category--shopping   { background: #e8f0fe; color: #1a73e8; }
+.spot-popup-category--tourism    { background: #f3e8fd; color: #7b1fa2; }
+.spot-popup-category--convenience{ background: #fff3e0; color: #e65100; }
+.spot-popup-category--hospital   { background: #fce8e6; color: #c5221f; }
+.spot-popup-category--station    { background: #e8eaf6; color: #3949ab; }
+
+.spot-popup-address {
+  font-size: 12px;
+  color: #5f6368;
+  margin: 0;
+}
+
+.spot-popup-description {
+  font-size: 12px;
+  color: #80868b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.spot-popup-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.spot-popup-favorite {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  border: 1px solid #dadce0;
+  background: #ffffff;
+  color: #5f6368;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.spot-popup-favorite:hover {
+  background: #f1f3f4;
+}
+
+.spot-popup-favorite.active {
+  border-color: #ea4335;
+  color: #ea4335;
+}
+
+.spot-popup-favorite svg {
+  width: 14px;
+  height: 14px;
+}
+
+.spot-popup-route {
+  flex: 1;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  border: none;
+  background: #1a73e8;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.spot-popup-route:hover {
+  background: #1557b0;
+}
+
+.spot-popup-route:disabled {
+  background: #dadce0;
+  color: #9aa0a6;
+  cursor: default;
+}

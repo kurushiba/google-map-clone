@@ -1,0 +1,41 @@
+.category-filter {
+  width: 100%;
+}
+
+.category-filter-list {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+
+.category-filter-list::-webkit-scrollbar {
+  display: none;
+}
+
+.category-filter-chip {
+  flex-shrink: 0;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  border: 1px solid #dadce0;
+  background: #ffffff;
+  color: #3c4043;
+  font-size: 13px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.category-filter-chip:hover {
+  background: #f1f3f4;
+}
+
+.category-filter-chip.active {
+  background: #e8f0fe;
+  border-color: #4285f4;
+  color: #1a73e8;
+  font-weight: 500;
+}

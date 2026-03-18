@@ -1,0 +1,13 @@
+.spot-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.spot-list-loading,
+.spot-list-empty {
+  padding: 32px 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #9aa0a6;
+  font-family: 'Roboto', sans-serif;
+}
